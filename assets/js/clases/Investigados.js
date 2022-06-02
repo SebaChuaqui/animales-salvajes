@@ -15,7 +15,6 @@ class Lobo extends Animal {
         super(nombre, edad, img, comentarios, sonido)
     }
 
-    //método para esta clase hija
     Aullar() {
         this.getSonido();
     }
