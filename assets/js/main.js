@@ -40,9 +40,7 @@ btnRegistrar.addEventListener('click', async(evento) => {
                 break;
         }
 
-        // console.log(animal);
         animalesSeleccionados.push(animal)
-            // console.log(animalesSeleccionados);
         crearCards(animalesSeleccionados);
         limpiarForm(nombre, edad, comentarios, imgBack);
         crearModal(animalesSeleccionados);
@@ -71,12 +69,8 @@ const limpiarForm = (nombre, edad, comentarios, imgBack) => {
 
 const crearCards = (listaAnimales) => {
     tablaAnimales.innerHTML = ''
-        // console.log(listaAnimales);
     listaAnimales.forEach((animal, i) => {
-        // console.log(animal);
-        // console.log(i);
         tablaAnimales.innerHTML +=
-            /*HTML*/
             `
             <div class="card text-white bg-secondary m-3">
             <img type ="button "style="width: 10rem;" src="${animal.Img}" class="card-img-top" data-bs-toggle="modal" data-bs-target="#${animal.Nombre}-${i}">
