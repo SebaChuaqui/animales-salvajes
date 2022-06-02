@@ -41,3 +41,8 @@ export class Animal {
         return this.setComentarios(comentarios);
     }
 }
+
+/*
+Probando que la clase funciona 
+console.log(new Animal('Oso', 33, '...', 'Maullar', 'Es tímido'));
+*/
