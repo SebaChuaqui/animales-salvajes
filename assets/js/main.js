@@ -46,7 +46,7 @@ btnRegistrar.addEventListener('click', async(evento) => {
         crearModal(animalesSeleccionados);
 
     } else {
-        alert('Por favor completar todos los datos del animal')
+        alert('Completar todos los datos del animal')
     }
 
 })
