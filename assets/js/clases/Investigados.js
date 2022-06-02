@@ -5,7 +5,6 @@ class Leon extends Animal {
         super(nombre, edad, img, comentarios, sonido)
     }
 
-    //método para esta clase hija
     Rugir() {
         this.getSonido();
     }
@@ -27,7 +26,6 @@ class Oso extends Animal {
         super(nombre, edad, img, comentarios, sonido)
     }
 
-    //método para esta clase hija
     Grunir() {
         this.getSonido();
     }
@@ -38,7 +36,6 @@ class Serpiente extends Animal {
         super(nombre, edad, img, comentarios, sonido)
     }
 
-    //método para esta clase hija
     Sisear() {
         this.getSonido();
     }
@@ -49,7 +46,6 @@ class Aguila extends Animal {
         super(nombre, edad, img, comentarios, sonido)
     }
 
-    //método para esta clase hija
     Chillar() {
         this.getSonido();
     }

@@ -1,26 +1,22 @@
 export class Animal {
     constructor(nombre, edad, img, comentarios, sonido) {
-            //Declaro variables en modalidad Clousure
-            let Nombre = nombre;
-            let Edad = edad;
-            let Img = img;
-            let Comentarios = comentarios;
-            let Sonido = sonido;
+        let Nombre = nombre;
+        let Edad = edad;
+        let Img = img;
+        let Comentarios = comentarios;
+        let Sonido = sonido;
 
-            //generando gets
-            this.getNombre = () => Nombre;
-            this.getEdad = () => Edad;
-            this.getImg = () => Img;
-            this.getComentarios = () => Comentarios;
-            this.getSonido = () => {
-                return Sonido;
-            }
-
-            //generando sets
-            this.setComentarios = (comentarios) => Comentarios = comentarios;
-
+        this.getNombre = () => Nombre;
+        this.getEdad = () => Edad;
+        this.getImg = () => Img;
+        this.getComentarios = () => Comentarios;
+        this.getSonido = () => {
+            return Sonido;
         }
-        //generando métodos get y set
+
+        this.setComentarios = (comentarios) => Comentarios = comentarios;
+
+    }
     get Nombre() {
         return this.getNombre();
     }
