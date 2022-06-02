@@ -1,4 +1,4 @@
-import { Animal, Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/Investigacion.js";
+import { Animal, Leon, Lobo, Oso, Serpiente, Aguila } from "./clases/Investigados.js";
 import Imagenes from "./Imagenes.js";
 import getSonidoAnimal from "./Sonidos.js";
 

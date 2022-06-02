@@ -1,4 +1,4 @@
-import Database from "./Data.js";
+import dataBase from "./Data.js";
 
 const animal = document.getElementById('animal');
 const preview = document.getElementById('preview');
@@ -6,14 +6,14 @@ const preview = document.getElementById('preview');
 animal.addEventListener('change', async() => {
     const { animales } = await dataBase.getData();
     const nombreAnimal = animal.value;
-    const animalElegido = animales.find(animal => animal.name == nombreAnimal);
-    const animalImagen = animalElegido.imagen;
-    const animalSelImg = `./assets/imgs/${animalImagen}`;
-    creaImagen(animalSelImg);
+    const animalSeleccionado = animales.find(animal => animal.name === nombreAnimal);
+    const animalImagen = animalSeleccionado.imagen;
+    const animalInyeccionImg = `./assets/imgs/${animalImagen}`;
+    crearImagen(animalInyeccionImg)
 })
 
-const creaImagen = (path) => {
-    preview.innerHTML = " ";
+const crearImagen = (path) => {
+    preview.innerHTML = '';
     preview.style.backgroundImage = `url(${path})`
 }
 
